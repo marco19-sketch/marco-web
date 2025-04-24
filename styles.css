@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    background: linear-gradient(45deg, black, red)
+}
+
+iframe {
+  width: 88%;
+  max-width: 800px;
+  height: 100%;
+  display: block;
+  margin: 20px auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+}
+
+#header #header-img {
+  height: 300px;
+  width: auto;
+  margin: 10px auto 20px;
+  display: block;
+  filter: drop-shadow(5px 5px 10px);
+}
+
+img {
+    width: 100%;
+    margin: 0 20px 20px 0;
+    border-radius: 10px;
+}
+
+#nav-bar {
+  font-size: 1.5rem;
+  position: fixed;
+  top: 0;
+  background: linear-gradient(45deg, red, black);
+  border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+figure {
+    display: grid;
+}
+
+.guitar {
+    display: grid;
+    grid-template-columns: 2fr 0.9fr 0.1fr;
+    align-items: start;
+}
+
+.guitar-heading {
+    grid-column: 2;
+    align-self: start;
+    text-align: center;
+    color: white;
+}
+
+.top {
+    grid-column: 3;
+    margin-top: 10px;
+}
+
+.description {
+    grid-column: 2;
+    align-self: start;
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 10px;
+}
+
+.input {
+    margin: 20px auto 40px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .guitar {
+    display: block;
+}
+}
